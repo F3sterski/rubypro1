@@ -1,0 +1,27 @@
+def wyznacznik(tab)
+	suma=3
+end
+
+macierz = []
+
+begin
+	puts "podaj wymiar macierzy:\n"
+	a = gets.chomp.to_i
+	if a < 0
+		puts "Cyfra nie moze byc ujemna"
+	end
+end while a < 0
+for i in 0..a-1
+	macierz[i]=[]
+	puts "podaj #{i} wiersz macierzy: "
+	for j in 0..a-1
+		macierz[i][j] = gets.chomp.to_i
+	end
+end
+
+for i in 0..a-1
+               print "#{macierz[i][j]} "
+puts "\n"
+end
+
+puts "Wyznacznik macierzy wynosi #{wyznacznik(macierz)}" 
