@@ -1,0 +1,72 @@
+puts 'Hello world'
+# Hello world
+
+puts "Hello world"
+# Hello world
+
+puts ("Hello world")
+# Hello world
+
+print "Hello world"
+# Hello world
+//without new line
+
+puts "Integer:" + "#{10} "+" 
+      Double:"<<"#{3.14} "<<" 
+      Boolean: ".concat("#{true}")
+#Integer:10  Double:3.14  Boolean: true
+//to concat string use '+','<<' or method 'concat'
+
+a = 100000000000000000000000000000000000000000000000000000000000000000000
+puts a
+//There is no number type limit, this number could be really long.
+
+floatA = 1.999999999999999
+puts floatA
+#1.999999999999999
+floatB = 1.999999999999999
+puts floatB
+#2.0
+//Little weird but float have limit
+
+tab = "before\tafter\n"
+puts tab
+#before after
+#
+//for tab use '\t', if you want new line use '\n'
+
+arr = [[[0,0,0]],[1,1],2]
+puts arr[2]
+#2
+puts arr[1][0]
+#1
+puts arr[0][0][0]
+#0
+//as you can see array look like this:
+//0
+//0 1
+//0 1 2
+
+//increments and steps
+(1..4).step(1) {|i| print "#{i }"}
+#1 2 3 4
+4.downto(1) {|i| print "#{i }"}
+#4 3 2 1
+
+//simple class
+class MyClass
+  attr_reader:test
+  def initialize
+    @test = 1
+  end
+end
+//We have now ready class, without attr_reader,
+//access to test will be impossible.
+
+instance = Myclass.new
+puts instance.test
+#1
+//there is also attr_writer who allows to write changes to variable
+//and attr_accessor, who allows to do both think on element
+
+
